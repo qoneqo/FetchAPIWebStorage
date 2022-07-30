@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  color: #281e5a;
+  background: #fff;
+  padding: 1em;
+  height: 5vh; 
+  font-weight: 800;
+  z-index: 100;
+  box-shadow: 0 6px 10px #bbbbbb59;
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  font-size: 1.2em;
+}
+#cart {
+  cursor: pointer;
+  font-size: .8em;
+  margin: 0 10px;
+  position: relative;
+  bottom: 10px;
+  text-align: right;
+}
+#cart i {
+  font-size: 1.2em;
+}
+#cart-count-container {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+}
+#cart-count {
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  background: red;
+  border-radius: 50%;
+  padding: 2px;
+  color: #fff;
+  font-size: .85em;
+}
+.section {
+  background: #fff;
+}
+.content-title {
+  font-size: 1.1em;
+  margin: 0 1.5em 1em 1.5em;
+  font-weight: 600;
+}
+#rec-books {
+  margin: 1em;
+  min-height: calc(100vh - 10vh - 2em - 2em - 1em - 2em);
+  padding: 1em;
+}
+.book-list {
+  /* display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto; */
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .book:first-child, .book:last-child {
+  margin: 0;
+} */
+.book {
+  margin: 1.5em;
+}
+.book .book-img-container {
+  text-align: center;  
+}
+.book img {
+  width: 10em;
+  display: inline-block;
+  height: 12em;
+}
+.book p {
+  margin: 0;
+}
+.book .author {
+  font-size: 12px;
+  color: #6d6d6d;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #6d6d6d;
+  margin: 7.5px 0;
+}
+.book .title {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 150%;
+  letter-spacing: normal;
+  color: #151515;
+}
+.book .price {
+  color: #0060ae;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+.book .add-to-cart {
+  cursor: pointer;
+}
+
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 26px solid #fff;
+  position: absolute;
+  top: -13px;
+  right: 25px;
+}
+#cart-list {
+  position: fixed;
+  top: 11vh;
+  right: 0;
+  width: 20em;
+  height: calc(100vh - 20vh);
+  background: #fff;
+  z-index: 5;
+  box-shadow: 0 6px 10px #bbbbbb59;
+}
+.cart-list-title {
+  /* font-weight: 800; */
+  padding: 0 .5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f3f3f3;
+}
+.added-item-container {
+  max-height: 80%;
+  overflow-y: scroll;
+}
+.added-item {
+  display: flex;
+  margin: 1em 0;
+}
+.added-item p {
+  margin: 0 .5em;
+}
+.added-item-img img {
+  width: 4em;
+}
+.total-price {
+  border-top: 1px solid #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .5em;
+  font-weight: 800;
+}
+
+footer {
+  height: 5vh;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: .5em;
+}
+footer p {
+  margin: 0;
+}

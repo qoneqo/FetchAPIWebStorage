@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookstore</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/3202a91299.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header logo & cart -->
+  <header>
+    <span id="logo">My Bookstore</span>    
+    <div id="cart">
+      Keranjang Belanja
+      <i class="fas fa-shopping-cart"></i>
+      <div id="cart-count-container">
+        <span id="cart-count">1</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section cart list -->
+  <section id="cart-list">
+    <div class="triangle-up"></div>
+    <p class="cart-list-title">Keranjang Belanja</p>
+    <div class="added-item-container">
+      <div class="added-item">
+        <p class="added-item-img"><img src="http://s.s-bol.com/imgbase0/imagebase/large/FC/5/3/6/6/1001004011806635.jpg" alt=""></p>
+        <p class="added-item-title">Vrienden voor het leven</p>
+        <p class="added-item-price">$10.00</p>
+      </div>
+      
+    </div>
+    <div class="total-price">
+      <p>Total:</p>
+      <p>$10.00</p>
+    </div>
+  </section>
+
+  <!-- Section book list -->
+  <section id="rec-books" class="section">
+    <p class="content-title">Buku-buku terpopuler</p>
+    <div class="book-list">
+      <div class="book">
+        <div class="book-img-container">
+          <img src="http://s.s-bol.com/imgbase0/imagebase/large/FC/5/3/6/6/1001004011806635.jpg" alt="">
+        </div>
+        <p class="author">Maeve Binchy</p>
+        <p class="title">Vrienden voor het leven</p>
+        <p class="price">$10.00</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
+      </div>      
+    </div>
+  </section>
+  <footer>
+    <p>MyBookstore &copy;2022</p>
+  </footer>
+
+  <script>
+    const cartIcon = document.getElementById('cart');
+    cartIcon.addEventListener('click', function() {
+      const cartList = document.getElementById('cart-list');
+      if (cartList.style.display === 'none') {
+        cartList.style.display = 'block';
+      } else {
+        cartList.style.display = 'none';
+      }
+
+    })
+  </script>
+</body>
+</html>
