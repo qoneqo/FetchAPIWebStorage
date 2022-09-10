@@ -26,12 +26,20 @@
     <div class="triangle-up"></div>
     <p class="cart-list-title">Keranjang Belanja</p>
     <div class="added-item-container">
-      <div class="added-item">
-        <p class="added-item-img"><img src="http://s.s-bol.com/imgbase0/imagebase/large/FC/5/3/6/6/1001004011806635.jpg" alt=""></p>
-        <p class="added-item-title">Vrienden voor het leven</p>
-        <p class="added-item-price">$10.00</p>
+      <div class="added-item-list">
+        <div class="added-item">
+          <p class="added-item-img"><img src="http://s.s-bol.com/imgbase0/imagebase/large/FC/5/3/6/6/1001004011806635.jpg" alt=""></p>
+          <div class="d-flex">
+            <p class="added-item-title">Vrienden voor het leven</p>
+            <p class="added-item-price">$10.00</p>
+          </div>
+        </div>      
+        <div class="btn-container d-flex justify-content-end">
+          <button class="plus-qty fa fa-plus"></button>
+          <input class="input-qty" type="text" value="1">
+          <button class="minus-qty fas fa-minus"></button>          
+        </div>
       </div>
-      
     </div>
     <div class="total-price">
       <p>Total:</p>
@@ -50,7 +58,12 @@
         <p class="author">Maeve Binchy</p>
         <p class="title">Vrienden voor het leven</p>
         <p class="price">$10.00</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to cart</button>
+        <div class="btn-container">
+          <button class="plus-qty fa fa-plus"></button>
+          <input class="input-qty" type="text" value="1">
+          <button class="minus-qty fas fa-minus"></button>          
+          <button class="add-to-cart fas fa-cart-plus"></button>
+        </div>
       </div>      
     </div>
   </section>
@@ -58,17 +71,7 @@
     <p>MyBookstore &copy;2022</p>
   </footer>
 
-  <script>
-    const cartIcon = document.getElementById('cart');
-    cartIcon.addEventListener('click', function() {
-      const cartList = document.getElementById('cart-list');
-      if (cartList.style.display === 'none') {
-        cartList.style.display = 'block';
-      } else {
-        cartList.style.display = 'none';
-      }
-
-    })
-  </script>
+  <script src="./script.js"></script>
+  <!-- <script src="./script-add-to-cart.js"></script> -->
 </body>
 </html>

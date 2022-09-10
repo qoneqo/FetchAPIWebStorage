@@ -14,16 +14,21 @@ header {
   box-shadow: 0 6px 10px #bbbbbb59;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: calc(100% - 2em);
+  top: 0;
 }
 #logo {
   font-size: 1.2em;
+  align-items: center;
+  display: flex;
 }
 #cart {
   cursor: pointer;
   font-size: .8em;
   margin: 0 10px;
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
   text-align: right;
 }
 #cart i {
@@ -36,7 +41,7 @@ header {
 }
 #cart-count {
   position: absolute;
-  top: 5px;
+  top: 20px;
   right: -5px;
   background: red;
   border-radius: 50%;
@@ -56,12 +61,26 @@ header {
   margin: 1em;
   min-height: calc(100vh - 10vh - 2em - 2em - 1em - 2em);
   padding: 1em;
+  margin-top: 10vh;
 }
 .book-list {
   /* display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto; */
   display: flex;
   flex-wrap: wrap;
+}
+.btn-container {
+  display: flex;
+}
+.btn-container button, .btn-container input {
+  margin: 0 .2em;
+}
+.btn-container button {
+  cursor: pointer;
+}
+.input-qty {
+  width: 10%;
+  text-align: center;
 }
 /* .book:first-child, .book:last-child {
   margin: 0;
@@ -70,7 +89,7 @@ header {
   margin: 1.5em;
 }
 .book .book-img-container {
-  text-align: center;  
+  /* text-align: center;   */
 }
 .book img {
   width: 10em;
@@ -122,16 +141,16 @@ header {
 }
 #cart-list {
   position: fixed;
-  top: 11vh;
+  top: 8vh;
   right: 0;
   width: 20em;
-  height: calc(100vh - 20vh);
+  /* height: calc(100vh - 20vh); */
   background: #fff;
   z-index: 5;
   box-shadow: 0 6px 10px #bbbbbb59;
 }
 .cart-list-title {
-  /* font-weight: 800; */
+  font-weight: 800;
   padding: 0 .5em;
   padding-bottom: 1em;
   border-bottom: 1px solid #f3f3f3;
@@ -167,4 +186,10 @@ footer {
 }
 footer p {
   margin: 0;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-end {
+  justify-content: end;
 }
