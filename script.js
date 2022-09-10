@@ -17,8 +17,6 @@ cartIcon.addEventListener('click', function () {
  */
 let bookListContainer = document.querySelector('.book-list');
 let addedItemContainer = document.querySelector('.added-item-container');
-let plusQty = document.getElementsByClassName('plus-qty');
-let minusQty = document.getElementsByClassName('minus-qty');
 
 bookListContainer.addEventListener('click', increaseDecreaseQty)
 addedItemContainer.addEventListener('click', increaseDecreaseQty)
